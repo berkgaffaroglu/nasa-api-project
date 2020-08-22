@@ -19,11 +19,11 @@ function App() {
         <Navigation />
         <div className='container content'>
           <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/apod" component={(props) => <APOD api_key={api_key} />} />
-            <Route path="/roverfootage/curiosity" component={(props) => <Curiosity api_key={api_key} />}/>
-            <Route path="/roverfootage/opportunity" component={(props) => <Opportunity api_key={api_key} />} />
-            <Route path="/roverfootage/spirit" component={(props) => <Spirit api_key={api_key} />} />
+            <Route exact path="nasa-api-project/" component={Home} />
+            <Route path="nasa-api-project/apod" component={(props) => <APOD api_key={api_key} />} />
+            <Route path="nasa-api-project/roverfootage/curiosity" component={(props) => <Curiosity api_key={api_key} />}/>
+            <Route path="nasa-api-project/roverfootage/opportunity" component={(props) => <Opportunity api_key={api_key} />} />
+            <Route path="nasa-api-project/roverfootage/spirit" component={(props) => <Spirit api_key={api_key} />} />
           </Switch>
 
         </div>
