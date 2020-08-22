@@ -1,38 +1,45 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'Oswald';
+  src: local('Oswald'), url(./fonts/Oswald.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: local('Roboto-Regular'), url(./fonts/Roboto-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'MavenPro';
+  src: local('MavenPro'), url(./fonts/MavenPro.ttf) format('truetype');
+}
+body {
+  font-family: Roboto;
+
+}
+.home-jumbotron {
+  padding:300px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.content_APOD {
+  width:60%;
+  min-width:350px;
+
+}
+.list-header {
+  display:inline;
+  color:blue;
+  font-size:20px;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.content-curiosity {
+  font-family: Oswald ;
+  font-size:20px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.footage-card {
+  transition: .5s;
 }
-
-.App-link {
-  color: #61dafb;
+.footage-card:hover {
+  transform: scale(1.04);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sol_footage {
+  text-transform: uppercase;
 }
