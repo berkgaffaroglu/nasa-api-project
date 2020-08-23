@@ -53,19 +53,19 @@ export class APOD extends Component {
 
 
         return (
-            <>
+            <div className="">
                 <h1 style={{ fontFamily: "Oswald" }} className="text-center"><b>Astronomical Picture of the Day</b></h1>
                 <hr />
-                <div className="card mb-4">
+                <div className="card">
                     {media_element}
-                    <div className="card-body">
+                    <div className="card-body mb-5">
                         <a target="_blank" href="https://apod.nasa.gov/apod/astropix.html"><h5 className="card-title">{this.state.APOD.title}</h5></a>
                         <p className="card-text">{this.state.APOD.explanation}</p>
                         <p className="card-text"><small className="text-muted">{this.state.APOD.date}</small></p>
                     </div>
 
                 </div>
-            </>
+            </div>
         )
     }
 }

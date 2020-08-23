@@ -4,14 +4,14 @@ import { Link } from 'react-router-dom'
 function Home() {
     return (
 
-        <div className="jumbotron jumbotron-fluid bg-dark text-white home-jumbotron p-5" style={{ fontFamily: "MavenPro" }}>
+        <div className="jumbotron jumbotron-fluid bg-dark text-white home-jumbotron" style={{ fontFamily: "Roboto" }}>
             <div className="container">
                 <h1 className="display-4">Nasa API Project</h1>
-                <p className="lead">I have written this project using only Reactjs. For this particular project, I used
+                <p className="lead">Hi! My name is Berk Gaffaroğlu. I have written this project using only Reactjs. For this particular project, I used
                 <a target="_blank" className="text-warning" href="https://api.nasa.gov/"><span> NASA's public API</span></a> to get all the data that I need.
                         <br />
                         In this application, you can see
-                        <LinkContainer className="text-warning" to="/apod"><Link> APOD (Astronomy Picture of the Day)</Link>
+                        <LinkContainer className="text-success" to="/apod"><Link> APOD (Astronomy Picture of the Day)</Link>
                     </LinkContainer> or raw footages that are served by
                         <LinkContainer className="text-success" to="/roverfootage/curiosity"><Link> Curiosity</Link></LinkContainer>
                         , <LinkContainer className="text-success" to="/roverfootage/spirit"><Link> Spirit</Link></LinkContainer> and

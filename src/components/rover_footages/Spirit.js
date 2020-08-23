@@ -43,7 +43,7 @@ export class Spirit extends Component {
         if (this.state.render) {
 
             return (
-                <div>
+                <div className="mb-5">
                     <h1 style={{fontFamily:"Oswald"}} className="text-center mt-4 mb-4">Raw Footages From <b>Spirit</b> at   <span className="sol_footage">SOL 180</span><hr/></h1>
                     <center>
 
