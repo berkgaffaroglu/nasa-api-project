@@ -42,13 +42,13 @@ class Navigation extends Component {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav>
-                            <LinkContainer exact to='nasa-api-project/'><Nav.Link style={{ marginBottom: "100px" }} className="custom-navlink">Home</Nav.Link></LinkContainer>
-                            <LinkContainer to='nasa-api-project/apod'><Nav.Link className="custom-navlink">APOD</Nav.Link></LinkContainer>
+                            <LinkContainer exact to='/'><Nav.Link style={{ marginBottom: "100px" }} className="custom-navlink">Home</Nav.Link></LinkContainer>
+                            <LinkContainer to='apod/'><Nav.Link className="custom-navlink">APOD</Nav.Link></LinkContainer>
 
-                            <DropdownButton className="nasa-api-project/" variant="light" title="Rover">
-                                <LinkContainer to='nasa-api-project/roverfootage/curiosity'><Nav.Link className="custom-navlink">Curiosity</Nav.Link></LinkContainer>
-                                <LinkContainer to='nasa-api-project/roverfootage/opportunity'><Nav.Link className="custom-navlink">Opportunity</Nav.Link></LinkContainer>
-                                <LinkContainer to='nasa-api-project/roverfootage/spirit'><Nav.Link className="custom-navlink">Spirit</Nav.Link></LinkContainer>
+                            <DropdownButton variant="light" title="Rover">
+                                <LinkContainer to='roverfootage/curiosity'><Nav.Link className="custom-navlink">Curiosity</Nav.Link></LinkContainer>
+                                <LinkContainer to='roverfootage/opportunity'><Nav.Link className="custom-navlink">Opportunity</Nav.Link></LinkContainer>
+                                <LinkContainer to='roverfootage/spirit'><Nav.Link className="custom-navlink">Spirit</Nav.Link></LinkContainer>
                             </DropdownButton>
                         </Nav>
 
