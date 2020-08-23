@@ -23,7 +23,7 @@ function App() {
             <Route path="/apod" component={(props) => <APOD api_key={api_key} />} />
             <Route path="/roverfootage/curiosity" component={(props) => <Curiosity api_key={api_key} />}/>
             <Route path="/roverfootage/opportunity" component={(props) => <Opportunity api_key={api_key} />} />
-            <Route path="roverfootage/spirit" component={(props) => <Spirit api_key={api_key} />} />
+            <Route path="/roverfootage/spirit" component={(props) => <Spirit api_key={api_key} />} />
           </Switch>
 
         </div>

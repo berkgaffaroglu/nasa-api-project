@@ -9,9 +9,9 @@ export class APOD extends Component {
             APOD: [],
             apiKey: props.api_key,
         }
-        
+
     }
-    componentDidMount() {
+    componentDidMount() {
         this.fetchAPOD()
     }
 
@@ -24,22 +24,14 @@ export class APOD extends Component {
 
     async fetchAPOD() {
         var currentDate = new Date()
-        var tz = 'Europe/Istanbul';
-        var utctz = moment.tz(currentDate, 'MM/DD/YYYY HH:mm:ss', tz).utc().format('YYYY-MM-DD');
+        var utctz = moment(currentDate, 'MM/DD/YYYY HH:mm:ss').format('YYYY-MM-DD');
         var onedaybefore = this.handleDay(utctz)
-        try {
-            let APODResponse = await fetch(`https://api.nasa.gov/planetary/apod?date=${utctz}&api_key=${this.state.apiKey}`);
-            let data = await APODResponse.json();
-            this.setState({
-                APOD: data
-            })
-        } catch{
-            let APODResponse = await fetch(`https://api.nasa.gov/planetary/apod?date=${onedaybefore}&api_key=${this.state.apiKey}`);
-            let data = await APODResponse.json();
-            this.setState({
-                APOD: data 
-            })
-        }
+        let APODResponse = await fetch(`https://api.nasa.gov/planetary/apod?date=${onedaybefore}&api_key=${this.state.apiKey}`);
+        let data = await APODResponse.json();
+        this.setState({
+            APOD: data
+        })
+
 
     }
 
@@ -48,7 +40,7 @@ export class APOD extends Component {
     // media_type = (video,image)
 
     render() {
-        
+
         var media_element = <div></div>
         if (this.state.APOD.media_type === 'image') {
             media_element = <a target="_blank" href="https://apod.nasa.gov/apod/astropix.html"><Image alt={this.state.APOD.title} className="card-img-top" src={this.state.APOD.hdurl}></Image></a>
@@ -71,7 +63,7 @@ export class APOD extends Component {
                         <p className="card-text">{this.state.APOD.explanation}</p>
                         <p className="card-text"><small className="text-muted">{this.state.APOD.date}</small></p>
                     </div>
-                    
+
                 </div>
             </>
         )

@@ -23,10 +23,10 @@ export class Spirit extends Component {
 
         try {
             // if there is no photos today throw a TypeError call goBack(currentSol)
-            var curiosityResponse = await (fetch(`https://api.nasa.gov/mars-photos/api/v1/rovers/spirit/photos?sol=180&api_key=${this.state.apiKey}`))
-            var data = await curiosityResponse.json()
+            var spiritResponse = await (fetch(`https://api.nasa.gov/mars-photos/api/v1/rovers/spirit/photos?sol=180&api_key=${this.state.apiKey}`))
+            var data = await spiritResponse.json()
             this.setState({
-                opportunityFootage: data,
+                spiritFootage: data,
                 render: true,
             })
         }
@@ -39,17 +39,17 @@ export class Spirit extends Component {
 
     render() {
 
-        var opportunityFootageList = this.state.opportunityFootage
+        var spiritFootageList = this.state.spiritFootage
         if (this.state.render) {
 
             return (
                 <div>
-                    <h1 style={{fontFamily:"Oswald"}} className="text-center mt-4 mb-4">Raw Footages From <b>Spirit</b> at   <span className="sol_footage">SOL 5100</span><hr/></h1>
+                    <h1 style={{fontFamily:"Oswald"}} className="text-center mt-4 mb-4">Raw Footages From <b>Spirit</b> at   <span className="sol_footage">SOL 180</span><hr/></h1>
                     <center>
 
                         <div className="row justify-content-center content-curiosity">
                             {
-                                opportunityFootageList.photos.map(
+                                spiritFootageList.photos.map(
                                     function (footage, index) {
                                         return (
                                             <div className="col-lg-4 col-md-6 col-sm-12 mt-5 mb-5">
