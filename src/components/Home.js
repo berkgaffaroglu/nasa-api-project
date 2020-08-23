@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 function Home() {
     return (
 
-        <div className="jumbotron jumbotron-fluid bg-dark text-white home-jumbotron" style={{ fontFamily: "Roboto" }}>
+        <div className="jumbotron jumbotron-fluid bg-dark text-white home-jumbotron pl-3 pr-3" style={{ fontFamily: "AnticSlab" }}>
             <div className="container">
                 <h1 className="display-4">Nasa API Project</h1>
                 <p className="lead">Hi! My name is Berk Gaffaroğlu. I have written this project using only Reactjs. For this particular project, I used
@@ -18,7 +18,9 @@ function Home() {
                         <LinkContainer className="text-success" to="/roverfootage/opportunity"><Link> Opportunity</Link></LinkContainer> (mars discovery rovers).
                         You can go back to my portfolio just by clicking the button below.
                         </p>
-                <a href="http://berkgaffaroglu.com/" target="_blank" className="btn btn-lg btn-success ml-2 mt-3">MY PORTFOLIO</a>
+                <a href="http://berkgaffaroglu.com/" target="_blank" className="btn btn-lg btn-outline-info ml-2 mt-3"><span className="text-white">MY PORTFOLIO</span></a>
+                <a href="https://github.com/berkgaffaroglu/nasa-api-project/" target="_blank" className="btn btn-lg btn-outline-danger ml-2 mt-3"><span className="text-white">THE CODE</span></a>
+
             </div>
         </div>
     )

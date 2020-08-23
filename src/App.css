@@ -3,6 +3,10 @@
   src: local('Oswald'), url(./fonts/Oswald.ttf) format('truetype');
 }
 @font-face {
+  font-family: 'AnticSlab';
+  src: local('AnticSlab'), url(./fonts/AnticSlab.ttf) format('truetype');
+}
+@font-face {
   font-family: 'Roboto-Regular';
   src: local('Roboto-Regular'), url(./fonts/Roboto-Regular.ttf) format('truetype');
 }

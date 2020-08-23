@@ -54,7 +54,7 @@ export class APOD extends Component {
 
         return (
             <div className="">
-                <h1 style={{ fontFamily: "Oswald" }} className="text-center"><b>Astronomical Picture of the Day</b></h1>
+                <h1 style={{ fontFamily: "AnticSlab" }} className="text-center"><b>Astronomical Picture of the Day</b></h1>
                 <hr />
                 <div className="card">
                     {media_element}

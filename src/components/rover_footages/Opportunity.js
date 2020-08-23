@@ -44,7 +44,7 @@ export class Opportunity extends Component {
 
             return (
                 <div className="mb-5">
-                    <h1 style={{fontFamily:"Oswald"}} className="text-center mt-4 mb-4">Raw Footages From <b>Opportunity</b> at <span className="sol_footage">SOL 5100</span><hr/></h1>
+                    <h1 style={{fontFamily:"AnticSlab"}} className="text-center mt-4 mb-4">Raw Footages From <b>Opportunity</b> at <span className="sol_footage">SOL 5100</span><hr/></h1>
                     <center>
 
                         <div className="row justify-content-center content-curiosity">
