@@ -9,10 +9,10 @@ import Spirit from './components/rover_footages/Spirit';
 import Opportunity from './components/rover_footages/Opportunity';
 import Home from './components/Home';
 import Footer from './components/Footer';
-
+require('dotenv').config()
 
 function App() {
-  const api_key = 'FtzxVQJdRfwpSZ47Ca82rtvtU5ypxVDwEMNRfbFR'
+  const api_key = process.env.REACT_APP_NASA_API_KEY
   return (
     <Router>
       <div className="App">

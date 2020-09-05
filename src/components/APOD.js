@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import moment from 'moment-timezone';
 import { Image } from 'react-bootstrap'
+import { LoadingSpinner } from './LoadingSpinner';
 export class APOD extends Component {
     constructor(props) {
         super(props)
@@ -8,6 +9,7 @@ export class APOD extends Component {
         this.state = {
             APOD: [],
             apiKey: props.api_key,
+            render: false
         }
 
     }
@@ -29,7 +31,8 @@ export class APOD extends Component {
         let APODResponse = await fetch(`https://api.nasa.gov/planetary/apod?date=${onedaybefore}&api_key=${this.state.apiKey}`);
         let data = await APODResponse.json();
         this.setState({
-            APOD: data
+            APOD: data,
+            render:true
         })
 
 
@@ -51,7 +54,7 @@ export class APOD extends Component {
                 frameBorder="0" />
         }
 
-
+        if(this.state.render) {
         return (
             <div className="">
                 <h1 style={{ fontFamily: "AnticSlab" }} className="text-center"><b>Astronomical Picture of the Day</b></h1>
@@ -67,6 +70,13 @@ export class APOD extends Component {
                 </div>
             </div>
         )
+        } else {
+            return (
+
+                <LoadingSpinner />
+
+            )
+        }
     }
 }
 
