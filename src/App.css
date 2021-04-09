@@ -1,18 +1,6 @@
 @font-face {
-  font-family: 'Oswald';
-  src: local('Oswald'), url(./fonts/Oswald.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'AnticSlab';
-  src: local('AnticSlab'), url(./fonts/AnticSlab.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Roboto-Regular';
-  src: local('Roboto-Regular'), url(./fonts/Roboto-Regular.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'MavenPro';
-  src: local('MavenPro'), url(./fonts/MavenPro.ttf) format('truetype');
+  font-family: 'RopaSans';
+  src: local('RopaSans'), url(./fonts/RopaSans-Regular.ttf) format('truetype');
 }
 body {
   font-family: Roboto;

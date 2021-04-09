@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { LoadingSpinner } from '../LoadingSpinner';
 import { Alert } from 'react-bootstrap';
+import {localize} from "../utils"
 
 export class Spirit extends Component {
     constructor(props) {
@@ -8,6 +9,7 @@ export class Spirit extends Component {
         
         this.state = {
             opportunityFootage: [],
+            language: props.language,
             apiKey: props.api_key,
             render: false,
             hasErrors: false,
@@ -40,11 +42,14 @@ export class Spirit extends Component {
     render() {
 
         var spiritFootageList = this.state.spiritFootage
+        var language = this.state.language
         if (this.state.render) {
 
             return (
                 <div className="mb-5">
-                    <h1 style={{fontFamily:"AnticSlab"}} className="text-center mt-4 mb-4">Raw Footages From <b>Spirit</b> at   <span className="sol_footage">SOL 180</span><hr/></h1>
+                    <h1 className="text-center mt-4 mb-4">
+                        {localize(language,<>Spirit Rover'ının Mars'ta <b>180. Gününde</b> Çektiği Fotoğraflar</>,<>Raw Footages From <b>Spirit</b> at   <span className="sol_footage">SOL 180</span></>)}
+                    <hr/></h1>
                     <center>
 
                         <div className="row justify-content-center content-curiosity">
@@ -54,7 +59,7 @@ export class Spirit extends Component {
                                         return (
                                             <div className="col-lg-4 col-md-6 col-sm-12 mt-5 mb-5">
                                                 <div className="card">
-                                                    <a href={footage.img_src} target="_blank"><img src={footage.img_src} alt={index} className="card-img-top footage-card" /></a>
+                                                    <a href={footage.img_src} rel="noreferrer" target="_blank"><img src={footage.img_src} alt={index} className="card-img-top footage-card" /></a>
                                                 </div>
                                             </div>
                                         )
@@ -82,7 +87,7 @@ export class Spirit extends Component {
         } else {
             return (
 
-                <LoadingSpinner />
+                <LoadingSpinner language={this.state.language} />
 
             )
         }
