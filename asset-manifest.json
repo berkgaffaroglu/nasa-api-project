@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/nasa-api-project/static/css/main.a806d6eb.chunk.css",
+    "main.js": "/nasa-api-project/static/js/main.c4cc36f6.chunk.js",
+    "main.js.map": "/nasa-api-project/static/js/main.c4cc36f6.chunk.js.map",
+    "runtime-main.js": "/nasa-api-project/static/js/runtime-main.4feb61e6.js",
+    "runtime-main.js.map": "/nasa-api-project/static/js/runtime-main.4feb61e6.js.map",
+    "static/css/2.4c97ca4f.chunk.css": "/nasa-api-project/static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.0d142079.chunk.js": "/nasa-api-project/static/js/2.0d142079.chunk.js",
+    "static/js/2.0d142079.chunk.js.map": "/nasa-api-project/static/js/2.0d142079.chunk.js.map",
+    "index.html": "/nasa-api-project/index.html",
+    "static/css/2.4c97ca4f.chunk.css.map": "/nasa-api-project/static/css/2.4c97ca4f.chunk.css.map",
+    "static/css/main.a806d6eb.chunk.css.map": "/nasa-api-project/static/css/main.a806d6eb.chunk.css.map",
+    "static/js/2.0d142079.chunk.js.LICENSE.txt": "/nasa-api-project/static/js/2.0d142079.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/nasa-api-project/static/media/RopaSans-Regular.268f1100.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4feb61e6.js",
+    "static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.0d142079.chunk.js",
+    "static/css/main.a806d6eb.chunk.css",
+    "static/js/main.c4cc36f6.chunk.js"
+  ]
+}
