@@ -50,7 +50,7 @@ export class Home extends Component {
                 {description}
                 </p>
                 
-                <a rel="noreferrer" href="http://berkgaffaroglu.com/" target="_blank" className="btn btn-lg btn-info ml-2 mt-3"><span className="text-white"><MdAccountCircle/> {localize(language, "PORTFÖYÜM", "MY PORTFOLİO")}</span></a>
+                <a rel="noreferrer" href="http://berkgaffaroglu.pythonanywhere.com/" target="_blank" className="btn btn-lg btn-info ml-2 mt-3"><span className="text-white"><MdAccountCircle/> {localize(language, "PORTFÖYÜM", "MY PORTFOLIO")}</span></a>
                 <a href="https://github.com/berkgaffaroglu/nasa-api-project/" rel="noreferrer" target="_blank" className="btn btn-lg btn-danger ml-2 mt-3"><span className="text-white"><AiOutlineGithub/> {localize(language, "KOD", "THE CODE")}</span></a>
 
             </div>
