@@ -16,7 +16,7 @@ export class App extends Component {
     super(props)
 
     this.state = {
-        language: 'TR'
+        language: 'EN'
     }
     this.changeLanguage = this.changeLanguage.bind(this)
 }
